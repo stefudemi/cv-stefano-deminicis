@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Chan | Desarrollador Senior Full-Stack | Proyecto UTN</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Assets/utn-logo.png" alt="Logo UTN" class="navbar-utn-logo">
+            <span class="logo-text"></span>
+        </div>
+        <div class="nav-links">
+            <button onclick="scrollToSection('inicio')">Inicio</button>
+            <button onclick="scrollToSection('sobre-mi')">Sobre Mí</button>
+            <button onclick="scrollToSection('proyectos')">Experiencia</button>
+            <button onclick="scrollToSection('habilidades')">Habilidades</button>
+            <button onclick="scrollToSection('contacto')">Contacto</button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="inicio" class="section hero">
+            <div class="content fade-in">
+                <div class="profile-container">
+                    <img src="Assets/perfil.jpg" alt="Foto de Django" class="profile-img">
+                </div>
+                <h1>Django Freeman</h1>
+                <p class="subtitle">Desarrolador Full Stack Senior & especialista en DevOps</p>
+                
+                <p>
+                    Especialista en el desarrollo de sistemas distribuidos y arquitecturas de alta concurrencia. 
+                    Con más de 8 años transformando ideas en productos digitales escalables, 
+                    actualmente perfeccionando metodologías de ingeniería avanzada en la <strong>UTN</strong>.
+                </p>
+                
+                <button class="cta-btn" onclick="scrollToSection('proyectos')">Explorar Portfolio</button>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="section bg-light">
+            <h2 class="section-title">Sobre Mí</h2>
+                <p>
+                    Desarrollador <strong>Full Stack Senior</strong> con más de 8 años de trayectoria liderando el diseño y la implementación de ecosistemas digitales de alta disponibilidad. Mi enfoque combina la robustez del backend con <strong>Python y Django</strong>, la agilidad de frontends modernos en <strong>React</strong>, y una mentalidad <strong>DevOps</strong> orientada a la automatización.
+                </p>
+                <p style="margin-top: 10px;">
+                    Experto en la arquitectura de microservicios, optimización de bases de datos relacionales y despliegue escalable mediante contenedores <strong>Docker y Kubernetes</strong>. He gestionado infraestructuras críticas en <strong>AWS</strong>, implementando pipelines de <strong>CI/CD</strong> que garantizan entregas continuas y seguras. Mi objetivo es transformar desafíos técnicos complejos en soluciones de software eficientes, mantenibles y alineadas con los objetivos estratégicos del negocio.
+                </p>
+        </section>
+
+        <section id="proyectos" class="section">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="grid">
+                <div class="card fade-in">
+                    <h3>Arquitecto Backend Principal</h3>
+                    <p><strong><a href="https://www.google.com" target="_blank" class="company-link">FinTech Solutions S.A.</a></strong> | 2020 - Presente</p>
+                    <ul>
+                        <li>Liderazgo técnico en proyectos de alta concurrencia.</li>
+                        <li>Optimización de bases de datos relacionales.</li>
+                        <li>Contacto soporte: <a href="mailto:django.chan@ficticio.com" class="email-link">django.chan@ficticio.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>Proyecto: Muse Optimizer</h3>
+                    <p>Algoritmo de matching de empleos utilizando procesamiento de lenguaje natural.</p>
+                    <span class="tag">Python</span> <span class="tag">Django</span> <span class="tag">Git</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section bg-light">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container fade-in">
+                <div class="skill-pill">Django</div>
+                <div class="skill-pill">React</div>
+                <div class="skill-pill">AWS</div>
+            </div>
+        </section>
+
+        <section id="educacion" class="section">
+            <h2 class="section-title">Educación</h2>
+            <div class="card fade-in education-card">
+                <div class="edu-content">
+                    <h3>Tecnicatura en Programación</h3>
+                    <p>UTN - Universidad Tecnológica Nacional</p>
+                </div>
+                <img src="imagenes/utn-logo.png" alt="Logo UTN" class="utn-logo">
+            </div>
+        </section>
+
+        <section id="contacto" class="section bg-light">
+            <h2 class="section-title">Contacto</h2>
+            <div class="card fade-in">
+                <form id="contact-form" class="form-container">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" class="back-to-top" onclick="scrollToSection('inicio')">↑ Volver</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
