@@ -34,3 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Esperamos a que cargue todo el documento
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const fraseLibertad = document.querySelector('.statement-container');
+
+    // El famoso DELAY: 1000ms = 1 segundo
+    setTimeout(() => {
+        if (fraseLibertad) {
+            fraseLibertad.classList.add('reveal');
+        }
+    }, 1000); 
+
+});
