@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "devicon";
-    src: url("../fonts/devicon.eot?qd25fp");
-    src: url("../fonts/devicon.eot?qd25fp#iefix") format("embedded-opentype"),
-         url("../fonts/devicon.ttf?qd25fp") format("truetype"),
-         url("../fonts/devicon.woff?qd25fp") format("woff"),
-         url("../fonts/devicon.svg?qd25fp#devicon") format("svg");
-
-}
-
 :root {
     --primary: #2563eb;
     --primary-hover: #1d4ed8;
