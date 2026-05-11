@@ -341,3 +341,7 @@ body {
         padding: 10px 20px;
     }
 }
+
+.spaced-text {
+    margin-top: 15px;
+}
