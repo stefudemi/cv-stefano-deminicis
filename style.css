@@ -342,6 +342,10 @@ body {
     }
 }
 
+.spaced-text {
+    margin-top: 15px;
+}
+
 #btn-volver {
     display: none; 
     position: fixed;
