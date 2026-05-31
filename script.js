@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const fraseLibertad = document.querySelector('.statement-container');
-    const btnVolver = document.getElementById('tu-id-del-boton');
+    const btnVolver = document.getElementById('btn-volver'); // Asegurate que el ID coincida con tu HTML
 
     setTimeout(() => {
         if (fraseLibertad) {
@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 1000);
 
+    // Lógica del Issue #1: Ocultar/Mostrar botón
     window.onscroll = function() {
         if (btnVolver) {
             if (window.scrollY > 100) {
@@ -47,4 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     };
+
+    // Funcionalidad extra: Click para subir
+    if (btnVolver) {
+        btnVolver.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });

@@ -23,7 +23,6 @@
             <button onclick="scrollToSection('contacto')">Contacto</button>
         </div>
     </nav>
-
     <main>
         <section id="inicio" class="section hero">
             <div class="content fade-in">
@@ -50,7 +49,7 @@
             <p>
                 Desarrollador <strong>Full Stack Senior</strong> con más de <strong>8 años de trayectoria</strong> liderando el diseño de ecosistemas digitales de <strong>alta disponibilidad</strong>. Mi enfoque se centra en la <strong>emancipación tecnológica</strong>: <strong>liberar sistemas</strong> de arquitecturas rígidas mediante la robustez de <strong>Python y Django</strong>, la agilidad de frontends modernos en <strong>React</strong> y una mentalidad <strong>DevOps</strong> centrada en la <strong>autonomía absoluta</strong> de los procesos.
             </p>
-            <p style="margin-top: 15px;">
+            <p class="spaced-text">
                 Experto en <strong>"romper las cadenas"</strong> de los monolitos tradicionales a través de <strong>microservicios</strong>, optimización de <strong>bases de datos relacionales</strong> y despliegue escalable mediante contenedores <strong>Docker y Kubernetes</strong>. He gestionado <strong>infraestructuras críticas en AWS</strong>, implementando <strong>pipelines de CI/CD</strong> que garantizan entregas tan rápidas como seguras. Mi objetivo es transformar desafíos técnicos complejos en soluciones de software <strong>libres de deuda técnica</strong>, mantenibles y estratégicamente <strong>alineadas con el negocio</strong>.
             </p>
         </section>
@@ -193,7 +192,9 @@
         </section>
     </main>
 
-    <button id="backToTop" class="back-to-top" onclick="scrollToSection('inicio')">↑ Volver</button>
+    <button id="btn-volver" title="Volver arriba">
+        <i class="devicon-up-arrow"></i>
+        <span>Volver arriba</span> </button>
 
     <script src="script.js"></script>
 </body>
